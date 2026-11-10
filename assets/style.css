@@ -1,0 +1,35 @@
+:root{--bg:#0a1628;--ink:#eef2f9;--dim:#a9b6cc;--line:rgba(255,255,255,.16);--gold:#ffd76a;--red:#ff0033;--link:#8fb3ff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);
+  background:radial-gradient(1100px 700px at 15% -10%,#25365f 0%,transparent 60%),radial-gradient(900px 700px at 110% 110%,#4a1d33 0%,transparent 60%),var(--bg);min-height:100vh}
+a{color:var(--link)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:960px;margin:0 auto;padding:20px 16px}
+.brand{font-weight:700;font-size:20px;color:var(--ink);text-decoration:none;letter-spacing:.2px}
+.brand b{color:var(--gold)}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap}
+.nav-links a{color:var(--dim);text-decoration:none}
+.nav-links a[aria-current=page],.nav-links a:hover{color:var(--ink)}
+.wrap{max-width:960px;margin:0 auto;padding:8px 16px 48px}
+.glass{background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%)}
+.hero{padding:40px 28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--gold);margin:0 0 8px}
+h1{font-size:40px;line-height:1.15;margin:0 0 14px}
+h2{font-size:24px;margin:32px 0 10px}
+.lead{font-size:19px;color:var(--dim);max-width:680px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
+.card{padding:22px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{margin:0;color:var(--dim)}
+.chan{display:flex;gap:14px;align-items:center}
+.chan img{width:64px;height:64px;border-radius:16px;flex:none}
+.yt{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:8px 14px;border-radius:999px;background:#fff;color:#0f0f0f;text-decoration:none;font-weight:600;font-size:15px}
+.yt svg{width:24px;height:17px}
+.steps{padding-left:20px}
+.steps li{margin:6px 0}
+.doc{padding:32px 28px}
+.doc h1{font-size:34px}
+.muted{color:var(--dim)}
+footer{max-width:960px;margin:0 auto;padding:24px 16px 40px;color:var(--dim);font-size:15px;border-top:1px solid var(--line)}
+footer a{color:var(--dim)}
+@media (max-width:600px){h1{font-size:30px}.hero,.doc{padding:24px 18px}}
